@@ -1,0 +1,97 @@
+
+
+\usepackage{amsfonts}
+\usepackage{amsmath,amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{hyperref} 
+\usepackage{tikz-cd}
+\usepackage{txfonts}
+
+
+
+%%% DRAFT
+
+\theoremstyle{plain}
+\newtheorem{lem}{Lemma}[section] 
+\newtheorem{thm}[lem]{Theorem}
+\newtheorem{clm}[lem]{Claim}
+\newtheorem*{thmno}{Theorem}
+\newtheorem{cor}[lem]{Corollary}
+\newtheorem{prop}[lem]{Proposition}
+\newtheorem*{propno}{Proposition}
+
+%%%The stuff below will appear in roman letters, while the stuff above in italics
+
+\theoremstyle{definition}
+\newtheorem{defn}[lem]{Definition}
+\newtheorem{ex}[lem]{Example}
+\theoremstyle{remark}
+\newtheorem{rk}[lem]{Remark}
+\numberwithin{equation}{lem}
+
+
+%\newcommand {\jcmt}[1]{{\marginpar{\textcolor{blue}{\Huge{$\dagger$}}}\scriptsize{\bf Xi:}\scriptsize{\ #1 \ }}}
+%\newcommand {\acmt}[1]{{\marginpar{\textcolor{purple}{\Huge{$\triangle$}}}\scriptsize{\bf Al:}\scriptsize{\ #1 \ }}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Macros%%%%%%%%%%%%
+
+%fields
+\newcommand{\KN}{\mathbb{N}}
+\newcommand{\KZ}{\mathbb{Z}}
+\newcommand{\KQ}{\mathbb{Q}}
+\newcommand{\KR}{\mathbb{R}}
+\newcommand{\KC}{\mathbb{C}}
+\newcommand{\KK}{\mathbb{K}}
+\newcommand{\KT}{\mathbb{T}}
+
+%mathcal
+\newcommand{\CA}{\mathcal{A}}
+\newcommand{\CB}{\mathcal{B}}
+\newcommand{\CC}{\mathcal{C}}
+\newcommand{\CE}{\mathcal{E}}
+\newcommand{\CF}{\mathcal{F}}
+\newcommand{\CG}{\mathcal{G}}
+\newcommand{\CH}{\mathcal{H}}
+\newcommand{\CI}{\mathcal{I}}
+\newcommand{\CK}{\mathcal{K}}
+\newcommand{\CL}{\mathcal{L}}
+\newcommand{\CM}{\mathcal{M}}
+\newcommand{\CN}{\mathcal{N}}
+\newcommand{\CP}{\mathcal{P}}
+\newcommand{\CR}{\mathcal{R}}
+\newcommand{\CS}{\mathcal{S}}
+\newcommand{\CU}{\mathcal{U}}
+\newcommand{\CO}{\mathcal{O}}
+
+%words commands
+\newcommand{\Cli}{{\rm Cl}}
+\newcommand{\gli}{{\rm gl}}
+\newcommand{\Gli}{{\rm Gl}}
+\newcommand{\Oli}{{\rm O}}
+\newcommand{\SOl}{{\rm SO}}
+\newcommand{\Pin}{{\rm Pin}}
+\newcommand{\Spi}{{\rm SPin}}
+
+%Diff geo
+\newcommand{\gi}{C^\infty}
+\newcommand{\gw}{\Omega}
+\newcommand{\gx}{\mathfrak{X}}
+\newcommand{\gs}{\Gamma}
+\newcommand{\de}{\partial}
+\newcommand{\g}{\mathfrak{g}}
+\newcommand{\h}{\mathfrak{h}}
+
+%logic stuff
+\newcommand{\st}{\hspace{.05in}:\hspace{.05in}}
+\newcommand{\y}{\hspace{.09in}\text{and}\hspace{.09in}}
+\newcommand{\fal}{\hspace{.1in} \forall \hspace{.1in} }
+\newcommand{\fto}{\rightarrow}
+\newcommand{\into}{\hookrightarrow}
+
+%groupoid stuff
+\newcommand{\soutar}{\rightrightarrows}
+\newcommand{\bt}{\mathbf{t}}
+\newcommand{\bs}{\mathbf{s}}

@@ -1,0 +1,56 @@
+	
+\date{\today}
+
+\maketitle
+
+Let $M$ be a smooth manifold and $H\rtimes G\soutar G$ a Lie 2-group. A $(H\rtimes G)$-bundle gerbe over $M$ is a collection of 
+
+\begin{itemize}
+	\item A surjective submersion $ Y\fto M$,
+	\item a principal $(H\rtimes G\soutar G)$-bundle $B$ over $Y^{[2]}$ with map $\pi^{(1)}\colon B\fto Y^{[2]}$,
+	\item and an associative morphism:
+	$$\circ_\mu \colon \pi_{12}^* B\otimes \pi_{23}^* B\fto \pi^*_{13} B.$$
+	of $(H\rtimes G\soutar G)$-bundles over $Y^{[3]}$.	
+\end{itemize} 
+There are clear maps $\bs\colon B\fto Y, b\mapsto \bs(\pi^{(1)}(b))$ and $\bt\colon B\fto Y, b\mapsto \bt(\pi^{(1)}(b))$ so 
+
+$$\circ_\mu\colon B {}_\bt\!\times_\bs B \fto B$$
+
+satisfying that 
+
+$$\left((h_1,g_1)\star b_1\right)\circ_\mu \left((h_2,g_2)\star b_2\right)=(h_1C_{g_1}h_2,g_1 g_2)\star (b_1\circ_\mu b_2)$$
+
+\begin{prop}
+	There is are maps making $B\soutar Y$ a Lie groupoid with composition $\circ_\mu$.
+\end{prop}
+
+\begin{proof}
+	The source and target are already given.
+	
+	For the identity bisection take for each $y\in Y$ any element $b_y\in B$ such that $\pi^{(1)}b_y=(y,y)\in Y^{[2]}$. 
+	Then call $g:= \rho(b_y)$ and there is a unique $h$ such that $b_y\circ_\mu b_y = (h_0,g)\star b_y$, this implies that $d(h_0)=g$. Let $N(y):=(h_0^{-1},g)\star b_y$.
+	
+	$N(y)$ is an identity for any element $b$ with $\pi^{(1)}(b)=(y,y)$, because $b=(h,g)\star b_y$ for some $h$ and 
+	
+	\begin{eqnarray*}
+		N(y)\circ_\mu b &=&((h_0^{-1},g)\star b_y)\circ_\mu ((h,g)\star b_y)\\
+		&=& (h_0^{-1}C_g h,g^2)\star (b_y\circ_\mu b_y)\\
+		&=& (h_0^{-1}C_g h,g^2)\star ((h_0,g)\star b_y)\\
+		&=& (h_0^{-1}(C_g h)h_0,g)\star b_y\\
+		&=& (C_{d(h_0^{-1})g} h,g)\star b_y=(h,g)\star b_y= b\\
+	\end{eqnarray*}
+	To see that it is a left neutral for any element $b'$ over $(y,z)\in Y^{[2]}$ note that $b_y\circ_\mu b'$ is also over $(y,z)$ therefore $b'=((h_1,g)\star b_y)\circ_\mu ((h_2,g_2)\star b')$ for some $h_1,h_2\in H$ and $g_2=\rho(b')\in G$. This process is similar to prove that $N(y)$ is a right neutral.
+	
+	For the inverse take any $b_1$ over $(y,z)$ and any $b_2$ over $(z,y)$, then $b_1\circ_\mu b_2$ is over $(y,y)$ and there is a unique $h_1$ such that $(h_1,e)N(y)=b_1\circ_\mu b_2$. Any element $b'$ over $(z,y)$ can be wrtiten as $(h,g_2)\star b_2$, the existence of an inverse reduces to find the right $h$ such that  $b_1\circ_\mu b'= N(y)$. And this is similar for the left inverse.
+\end{proof}
+
+Similarly if one defines a bundle gerbe as:
+
+\begin{itemize}
+	\item A groupoid $ Y^{(1)}\fto Y$,
+	\item a principal $(H\rtimes G\soutar G)$-bundle $B$ over $Y^{(1)}$ with map $\pi^{(1)}\colon B\fto Y^{(1)}$ and anchor $\rho\colon B\fto G$,
+	\item and an associative morphism:
+	$$\circ_\mu \colon {\rm pr}_1^* B\otimes {\rm pr}_2^* B\fto {\rm pr}_\circ B.$$
+	of $(H\rtimes G\soutar G)$-bundles over $Y^{(2)}=Y^{(1)} {}_\bs \! \times_\bt Y^{(1)}$ being.	
+\end{itemize} 
+One gets that there is a groupoid structure in $B$ with composition $\circ_\mu$.
